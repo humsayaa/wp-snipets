@@ -1,5 +1,6 @@
 <?php
 
+add_filter( 'wp_mail', 'filter_wp_mail' );
 function filter_wp_mail( $args ) {
 	/**
 	 * check for spam in $args['message']
